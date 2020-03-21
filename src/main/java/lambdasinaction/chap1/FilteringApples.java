@@ -3,6 +3,10 @@ package lambdasinaction.chap1;
 import java.util.*;
 import java.util.function.Predicate;
 
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
 public class FilteringApples{
 
     public static void main(String ... args){
@@ -71,6 +75,9 @@ public class FilteringApples{
         return result;
     }       
 
+    @Getter
+    @Setter
+    @ToString
     public static class Apple {
         private int weight = 0;
         private String color = "";
@@ -80,28 +87,6 @@ public class FilteringApples{
             this.color = color;
         }
 
-        public Integer getWeight() {
-            return weight;
-        }
-
-        public void setWeight(Integer weight) {
-            this.weight = weight;
-        }
-
-        public String getColor() {
-            return color;
-        }
-
-        public void setColor(String color) {
-            this.color = color;
-        }
-
-        public String toString() {
-            return "Apple{" +
-                   "color='" + color + '\'' +
-                   ", weight=" + weight +
-                   '}';
-        }
     }
 
 }
