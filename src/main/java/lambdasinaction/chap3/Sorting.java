@@ -1,7 +1,11 @@
 package lambdasinaction.chap3;
 
-import java.util.*;
 import static java.util.Comparator.comparing;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
 
 public class Sorting {
 
@@ -68,6 +72,7 @@ public class Sorting {
             this.color = color;
         }
 
+        @Override
         public String toString() {
             return "Apple{" +
                    "color='" + color + '\'' +
